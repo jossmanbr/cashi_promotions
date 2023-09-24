@@ -1,0 +1,21 @@
+{
+  "name": "cashi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "puppeteer": "^21.3.4",
+    "pocketbase": "^0.18.0"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  },
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
