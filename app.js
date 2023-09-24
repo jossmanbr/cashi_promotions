@@ -39,8 +39,9 @@ async function getPromoCashi() {
             })
             return allCards;
         })
-        await browser.close();
         await pb.collection("cashi_promotions").create({ promotions: JSON.stringify(data), auth: process.env.AUTH });
+        await browser.close();
+        
     } catch (error) {
         await pb.collection("log_cashi").create({ error: error.message, auth: process.env.AUTH});
     }
